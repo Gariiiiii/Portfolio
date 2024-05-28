@@ -17,4 +17,4 @@ This portfolio is designed to highlight my work and skills as a web developer. I
 - Bootstrap 5
 
 ## Preview
-
+https://gariiiiii.github.io/Portfolio/
