@@ -1,6 +1,7 @@
-* {
+*{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     scroll-behavior: smooth;
 }
@@ -63,6 +64,7 @@ body {
     color: white;
 }
 
+
 .hero-title {
     font-size: 3.7rem;
 }
@@ -74,7 +76,9 @@ body {
 }
 
 .text-color-main {
-    color: #00FAA8;
+    background: linear-gradient(45deg, #00FAA8, yellowgreen);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .hero-cta {
@@ -89,8 +93,9 @@ body {
 }
 
 .btn-outline-info:hover {
-    background-color: #00FAA8;
-    color: black;
+    background: linear-gradient(45deg, #00FAA8, yellowgreen);
+    -webkit-background-clip: var(--background) ;
+    -webkit-text-fill-color: white;
 }
 
 /* about section */
@@ -125,10 +130,27 @@ body {
 }
 
 #about .about-wrapper {
-    border: 1px solid #00FAA8;
+    position: relative;
     padding: 1rem;
     margin: 0.5rem;
+    background: hsla(0, 0%, 0%, 1);
+    background: linear-gradient(195deg, hsla(0, 0%, 0%, 1) 0%, hsla(175, 15%, 16%, 1) 50%);
+    background: -moz-linear-gradient(195deg, hsla(0, 0%, 0%, 1) 0%, hsla(175, 15%, 16%, 1) 50%);
+    background: -webkit-linear-gradient(195deg, hsla(0, 0%, 0%, 1) 0%, hsla(175, 15%, 16%, 1) 50%);
 }
+
+#about .about-wrapper::before {
+    content: '';
+    position: absolute;
+    top: -1px; /* Extend above the border */
+    left: -1px; /* Extend left of the border */
+    right: -1px; /* Extend right of the border */
+    bottom: -1px; /* Extend below the border */
+    z-index: -1;
+    background: linear-gradient(45deg, #00FAA8, yellowgreen);
+    border: 1px solid transparent; /* Solid border for the pseudo-element */
+}
+
 
 #about .about-wrapper-image {
     height: 100%;
@@ -194,8 +216,7 @@ body {
     align-items: center;
     color: white;
     margin: 5rem 1rem;
-    padding: 0.50rem;
-    height: 100vh;
+    padding: 1rem;
     position: relative;
 }
 
@@ -373,6 +394,8 @@ a {
 #projects {
     height: 100vh;
     position: relative;
+    margin: 5rem 1rem;
+    padding: 1rem;
 }
 
 .project-heading {
