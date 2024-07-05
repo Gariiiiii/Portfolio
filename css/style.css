@@ -88,14 +88,18 @@ body {
 }
 
 .btn-outline-info {
-    color: #00FAA8;
-    border-color: #00FAA8;
+    background: linear-gradient(45deg, #00FAA8, yellowgreen);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-color: rgb(77, 227, 109);
 }
 
 .btn-outline-info:hover {
     background: linear-gradient(45deg, #00FAA8, yellowgreen);
     -webkit-background-clip: var(--background) ;
     -webkit-text-fill-color: white;
+    border-color: rgb(77, 227, 109);
+
 }
 
 /* about section */
