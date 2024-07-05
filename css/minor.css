@@ -17,7 +17,9 @@ header {
 }
 
 #major-nav {
-    background-color: #00FAA8;
+    background: linear-gradient(45deg, #00FAA8, yellowgreen);
+    -webkit-background-clip: var(--background) ;
+    -webkit-text-fill-color: black;
     margin: 2px;
     padding: 5px;
 }
@@ -51,7 +53,9 @@ header {
 }
 
 #major-nav .dropdown-menu a{
-    background-color: #61a790;
+    background: linear-gradient(45deg, #00FAA8, yellowgreen);
+    -webkit-background-clip: var(--background) ;
+    -webkit-text-fill-color: white;
 }
 
 #projects {
@@ -216,14 +220,17 @@ a {
 }
 
 .btn-outline-info {
-    color: rgb(0, 250, 168);
-    border-color: rgb(0, 250, 168);
-    border-radius: 2rem;
+    background: linear-gradient(45deg, #00FAA8, yellowgreen);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-color: rgb(77, 227, 109);
 }
 
 .btn-outline-info:hover {
-    background-color: #00FAA8;
-}
+    background: linear-gradient(45deg, #00FAA8, yellowgreen);
+    -webkit-background-clip: var(--background) ;
+    -webkit-text-fill-color: white;
+    border-color: rgb(77, 227, 109);}
 
 /* .project-wrapper-image {
     width: 90%;
